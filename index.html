@@ -16,7 +16,7 @@
             <div class="flex-div">
                 <a class="nav__name-company"><p><span class="name-company--blue">Web</span>Studio</p></a>
                 <ul class="nav">
-                    <li class="nav__element"><a class="nav__link " href="./index.html"><p class="company-nav">Студия</p></a></li>
+                    <li class="nav__element active"><a class="nav__link " href="./index.html"><p class="company-nav">Студия</p></a></li>
                     <li class="nav__element"><a class="nav__link" href="./portfolio.html"><p class="portfolio-nav">Портфолио</p></a></li>
                     <li class="nav__element"><a class="nav__link"><p class="contakts-nav">Контакты</p></a></li>
                 </ul>
@@ -24,7 +24,7 @@
             <ul class="contacts">
                 <li class="contacts__element">
                     <div class="contacts__text">
-                        <svg class="contackts__icon mail">
+                        <svg class="contackts__icon mail" width= "16px" height= "11px">
                             <use href="./img/symbol-defs.svg#mail"></use>
                         </svg>
                         <a class="contacts__link" href="info@devstudio.com">info@devstudio.com</a>
@@ -32,7 +32,7 @@
                 </li>
                 <li class="contacts__element">
                     <div class="contacts__text">
-                        <svg class="contackts__icon phone">
+                        <svg class="contackts__icon phone" width= "10px" height= "15px">
                             <use href="./img/symbol-defs.svg#phone"></use>
                         </svg>
                         <a class="contacts__link" href="+380961111111">+38 096 111 11 11</a>
@@ -44,8 +44,10 @@
     <main>
             <!--Hello-->
             <section class="hello">
-                <h1 class="hello__title">Эффективные решения для вашего бизнеса</h1>
-                <span class="hello__buy"><a>Заказать услугу</a></span>
+                <div class="hello__overlay">
+                    <h1 class="hello__title">Эффективные решения для вашего бизнеса</h1>
+                    <span class="hello__buy"><a>Заказать услугу</a></span>
+                </div>
             </section>
             <!--Main Pynkts-->
             <section class="main-pynkts">
@@ -95,15 +97,15 @@
                 <ul class="occupation-list">
                     <li class="part-occupation">
                         <img src="./img/Growing.png" alt="картинка ноутбука">
-                        <p class="part-occupation__text">Десктопные приложения</p>
+                        <div class="part-occupation__overlay"><p class="part-occupation__text">Десктопные приложения</p></div>
                     </li>
                     <li class="part-occupation">
                         <img src="./img/boxphone.png" alt="картинка телефона">
-                        <p class="part-occupation__text">Мобильные приложения</p>
+                        <div class="part-occupation__overlay"><p class="part-occupation__text">Мобильные приложения</p></div>
                     </li>
                     <li class="part-occupation">
                         <img src="./img/Inspiration.png" alt="картинка планшета>">
-                        <p class="part-occupation__text">Дизайнерские решения</p>
+                        <div class="part-occupation__overlay"><p class="part-occupation__text">Дизайнерские решения</p></div>
                     </li>
                 </ul>
             </section>
